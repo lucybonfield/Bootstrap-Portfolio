@@ -3,12 +3,13 @@
     --dark-colour: #d2b48c;
     --medium-colour:#d8c3a5;
     --light-colour: #e2dcc3;
+    --off-white: #f0f0ea;
 }
 
 /* body */
 
 body {
-    background-color: var(--medium-colour);
+    background: url("../images/background.png");
 }
 
 /* navbar */
@@ -17,6 +18,7 @@ body {
     position: fixed;
     width: 100%;
     background: url("../images/nav-background.png");
+    opacity: 0.8;
     background-color: transparent !important;
     background-size: cover;
     z-index: 10;
@@ -25,10 +27,6 @@ body {
     margin-left: auto;
     margin-right: 0 !important;
 }
-/* .navbar-brand img {
-    padding-right: 15px;
-    width: 65px;
-} */
 .nav-item {
     margin: 0px 15px;
 }
@@ -46,4 +44,40 @@ body {
 }
 .navbar-items {
     background: url("../images/nav-background.png");
+}
+
+/* jumbotron */
+
+.jumbotron {
+    padding-top: 100px;
+    padding-left: 50px;
+}
+.jumbo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; 
+    padding-bottom: 20px;
+}
+.self-image {
+    border-radius: 50%;
+    height: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.contact-button {
+    background-color: var(--medium-colour);
+    border: none;
+    color: var(--off-white);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-right: 20px;
+}
+.contact-button:hover {
+    background-color: var(--light-colour);
+}
+.contact-button:active { 
+    background-color: var(--medium-colour) !important;
+    transform: scale(0.9);
+} 
+.center-button {
+    text-align: center;
 }
