@@ -45,6 +45,8 @@ body {
 .navbar-items {
     background: url("../images/nav-background.png");
 }
+.navbar-toggler-icon { display: none;} /* burger menu */
+button.navbar-toggler { display: none;}
 
 /* jumbotron */
 
@@ -58,9 +60,14 @@ body {
     align-items: center;
     gap: 80px; 
     padding-bottom: 20px;
+    cursor: default;
+}
+.lead {
+    cursor: default;
 }
 .self-image {
     border-radius: 50%;
+    border: 2px solid var(--nav-colour);
     height: 200px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -76,8 +83,19 @@ body {
 }
 .contact-button:active { 
     background-color: var(--medium-colour) !important;
-    transform: scale(0.9);
+    transform: scale(0.98);
 } 
 .center-button {
     text-align: center;
+}
+
+/* media screen */
+@media screen and (max-width: 837px) {
+    li {display: none;}
+    .navbar-toggler {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 837px) {
 }
