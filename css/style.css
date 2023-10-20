@@ -112,6 +112,20 @@ button.navbar-toggler { display: none;}
     padding-left: 10%;
     padding-bottom: 10px;
 }
+.card {
+    position: relative;
+    opacity: 0.8;
+}
+.card:hover {
+    opacity: 1;
+}
+.card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
 /* skills */
 .flex-container {
