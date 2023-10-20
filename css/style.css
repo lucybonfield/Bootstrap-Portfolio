@@ -148,12 +148,13 @@ button.navbar-toggler { display: none;}
 
 /* contact */
 .contact-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr;
     padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }  
 .contact-container > div {
     margin-right: 3%;
@@ -164,14 +165,16 @@ button.navbar-toggler { display: none;}
 }
 .contact-icon a {
     font-size: 70%;
-    margin-right: 30px;
 }
 
 /* media screen */
-@media screen and (max-width: 837px) {
+@media screen and (max-width: 905px) {
     li {display: none;}
     .navbar-toggler {
         display: inline;
+    }
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (min-width: 837px) {
