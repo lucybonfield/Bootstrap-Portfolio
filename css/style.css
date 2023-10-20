@@ -65,29 +65,57 @@ button.navbar-toggler { display: none;}
 .lead {
     cursor: default;
 }
-.self-image {
+.profile-picture {
     border-radius: 50%;
     border: 2px solid var(--nav-colour);
     height: 200px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.contact-button {
+.btn-primary {
     background-color: var(--medium-colour);
     border: none;
     color: var(--off-white);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-right: 20px;
+    margin-bottom: 20px;
 }
-.contact-button:hover {
+.btn-primary:hover {
     background-color: var(--light-colour);
 }
-.contact-button:active { 
+.btn-primary:active { 
     background-color: var(--medium-colour) !important;
     transform: scale(0.98);
 } 
 .center-button {
     text-align: center;
 }
+
+/* projects */
+
+.projects {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: auto auto;
+    padding: 0% 10% 0% 10%;
+  }
+
+  .project-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .card img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+.section-heading {
+    padding-left: 10%;
+    padding-bottom: 10px;
+}
+
+
 
 /* media screen */
 @media screen and (max-width: 837px) {
